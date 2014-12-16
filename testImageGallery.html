@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>imagegallery.js test</title>
+   
+    <script src="js/3rdParty/jquery-1.11.1.min.js"></script>
+    <script src="js/3rdParty/amplify.min.js"></script>
+    <script src="js/3rdParty/preloader-1.1.js"></script>
+    
+    <script src="js/canvasFW/canvasUtil.js"></script>
+    <script src="js/canvasFW/timer.js"></script>
+    <script src="js/canvasFW/transition.js"></script>
+    <script src="js/canvasFW/graphic.js"></script>
+    <script src="js/canvasFW/layer.js"></script>
+    
+    <script src="js/util/classutil.js"></script>
+    
+    <script src="js/imageGallery/topics.js"></script>
+    <script src="js/imageGallery/galleryloader.js"></script>
+    <script src="js/imageGallery/thumbnaillayer.js"></script>
+    <script src="js/imageGallery/thumbnail.js"></script>
+    <script src="js/imageGallery/slideshow.js"></script>
+    <script src="js/imageGallery/imagegallery.js"></script>
+</head>
+
+<body>
+    <script>
+        (function(){
+            new ImageGallery({
+                slideshow: {
+                },
+                thumbnailgrid:{
+                    // defines the number of thumbnails on x and y axis
+                    // if both are defined X is used
+                    sizeX: 4,   
+                    sizeY: 4
+                    // add auto-scaling properties for different screen sizes
+                    // affects also sizeX and sizeY. should probably be possible
+                    // to define whether to adjust size of thumbnails or sizeX...
+                    // - autoadjust (boolean) 
+                    // - paddingX (px)
+                    // - paddingY (px)
+                    // - minScale (% 0-x)
+                    // - maxScale (% 0-x)
+                },
+                images: [
+                    {
+                        image: 'assets/gallerySample1.png',
+                        tb: 'assets/gallerySample1_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample2.png',
+                        tb: 'assets/gallerySample2_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample3.png',
+                        tb: 'assets/gallerySample3_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample1.png',
+                        tb: 'assets/gallerySample1_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample2.png',
+                        tb: 'assets/gallerySample2_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample3.png',
+                        tb: 'assets/gallerySample3_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample1.png',
+                        tb: 'assets/gallerySample1_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample2.png',
+                        tb: 'assets/gallerySample2_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample3.png',
+                        tb: 'assets/gallerySample3_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample1.png',
+                        tb: 'assets/gallerySample1_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample2.png',
+                        tb: 'assets/gallerySample2_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample3.png',
+                        tb: 'assets/gallerySample3_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample1.png',
+                        tb: 'assets/gallerySample1_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample2.png',
+                        tb: 'assets/gallerySample2_tb.png'
+                    },
+                    {
+                        image: 'assets/gallerySample3.png',
+                        tb: 'assets/gallerySample3_tb.png'
+                    },
+                ]
+            });
+        })();
+    </script>
+</body>
+</html>
